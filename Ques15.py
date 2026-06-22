@@ -1,0 +1,6 @@
+distance1=int(input("Enter the first distance :"))
+time1=int(input("Enter the first time"))
+distance2=int(input("Enter the second distance :"))
+time2=int(input("Enter the second time"))
+avg_speed=(distance1+distance2)/(time1+time2)
+print("Average Speed =",avg_speed)
