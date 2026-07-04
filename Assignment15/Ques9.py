@@ -41,13 +41,13 @@ s=int(input("enter start year: "))
 e=int(input("enter end year: "))
 count=0
 for i in range(s,e+1):
-   if i%4==0 and i%400:
-      if i%100==0:
-         print(i,"- No Event")
-      else:
-         count=count+1
+   if i%4==0:
+      if i%100!=0 or i%400==0:
          print(i,"- Event Scheduled")
+         count=count+1
+      else:
+         print(i,"- No Event")
    else:
-      print(i,"- No Event")
+     print(i,"- No Event")
 print("Total Leap Year =",count)
-print("Total Event Scheduled =",count)         
+print("Total Event Scheduled =",count)      
